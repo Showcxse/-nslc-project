@@ -255,6 +255,14 @@
   left: 30px;
   font-size: 1rem;
 }
+
+.div-link {
+  display:block;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+}
+
 #data-link {
   text-decoration: none;
   color: white
