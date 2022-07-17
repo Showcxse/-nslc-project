@@ -255,6 +255,10 @@
   left: 30px;
   font-size: 1rem;
 }
+#data-link {
+  text-decoration: none;
+  color: white
+}
 
 .dp__card button:hover {
   cursor: pointer;
@@ -288,5 +292,76 @@
 
   .dp__card {
     width: 300px;
+  }
+}
+
+/* About Page CSS */
+.about {
+  background-color: #131313;
+}
+
+.about-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-self: center;
+  margin: 0 auto;
+  height: 93vh;
+  background-color: #131313;
+  z-index: 1;
+  width: 100%;
+  max-width: 1300px;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.about-content {
+  color: white;
+  width: 100%;
+}
+
+#about-content h1 {
+  font-size: 4rem;
+  background-color: #dc3545;
+  background-image: linear-gradient(to top, #ff0844 0%, #dc3435 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+.about-img--container {
+  text-align: center;
+}
+
+#about-img {
+  height: 80%;
+  width: 80%;
+}
+
+@media screen and (max-width: 768px) {
+  .about-container {
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+    justify-self: center;
+    width: 100%;
+    margin: 0 auto;
+    height: 92vh;
+  }
+
+  .about-content {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  .about-content h1 {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+  }
+
+  .about-content p {
+    margin-top: 1rem;
+    font-size: 1.5rem;
   }
 }
